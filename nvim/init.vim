@@ -1,5 +1,4 @@
 call plug#begin('~/.config/nvim/plugged')
-Plug 'dracula/vim'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
@@ -18,7 +17,7 @@ Plug 'davidhalter/jedi-vim'
 Plug 'othree/html5.vim'
 Plug 'elzr/vim-json'
 Plug 'nvie/vim-flake8'
-Plug 'klen/python-mode'
+"Plug 'klen/python-mode'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'itchyny/lightline.vim'
 Plug 'lervag/vimtex'
@@ -27,7 +26,7 @@ Plug 'ekalinin/dockerfile.vim'
 Plug 'suan/vim-instant-markdown'
 Plug 'matze/vim-move'
 Plug 'jalvesaq/Nvim-R'
-Plug 'tmhedberg/SimpylFold'
+"Plug 'tmhedberg/SimpylFold'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'mlent/ale'
@@ -35,11 +34,14 @@ Plug 'w0rp/ale'
 Plug 'eagletmt/ghcmod-vim'
 Plug 'Shougo/vimproc'
 Plug 'vim-airline/vim-airline'
-"Plug 'NLKNguyen/papercolor-theme'
+Plug 'lifepillar/vim-solarized8'
+Plug 'fati/vim-go'
 call plug#end()
 
 " color schemes
-color dracula
+let g:solarized_use16 = 1
+set background=dark
+colorscheme solarized8
 ":command Light :color PaperColor
 
 :imap kj <Esc>
